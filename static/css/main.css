@@ -1,0 +1,325 @@
+*{margin:0;padding:0;}
+html,body,#app,.wrapper{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+body{
+    font-family:"Helvetica Neue",Helvetica, "microsoft yahei", arial, STHeiTi, sans-serif;
+}
+a{text-decoration: none}
+.content{
+    /* background: none repeat scroll 0 0 #fff; */
+    background-image: url(../../static/images/main-bg.jpg);
+    background-size: 100% 100%;
+    /* background-repeat: no-repeat; */
+    /* position: absolute; */
+    /* left: 250px; */
+    /* right: 0;
+    top: 0; */
+    bottom:0;
+    width: auto;
+    height: 100%;
+    padding:40px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+.crumbs{
+    margin-bottom: 20px;
+}
+.pagination{
+    margin: 20px 0;
+    text-align: right;
+}
+.plugins-tips{
+    padding:20px 10px;
+    margin-bottom: 20px;
+}
+.el-button+.el-tooltip {
+    margin-left: 10px;
+}
+
+.el-table tr:hover{
+    background: #f6faff;
+}
+.mgb20{
+    margin-bottom: 20px;
+}
+
+.move-enter-active,.move-leave-active{
+    transition: opacity .5s;
+}
+.move-enter,.move-leave{
+    opacity: 0;
+}
+/*BaseForm*/
+.form-box{
+    width:600px;
+}
+.form-box .line{
+    text-align: center;
+}
+.el-time-panel__content::after, .el-time-panel__content::before {
+    margin-top: -7px;
+}
+/*Readme*/
+.ms-doc .el-checkbox__input.is-disabled+.el-checkbox__label{
+    color: #333;
+    cursor: pointer;
+}
+/*Upload*/
+.pure-button{
+    width:150px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+}
+.g-core-image-corp-container .info-aside{
+    height:45px;
+}
+.el-upload--text {
+    background-color: #fff;
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    box-sizing: border-box;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.el-upload--text .el-icon-upload {
+    font-size: 67px;
+    color: #97a8be;
+    margin: 40px 0 16px;
+    line-height: 50px;
+}
+.el-upload--text {
+    color: #97a8be;
+    font-size: 14px;
+    text-align: center;
+}
+.el-upload--text em {
+    font-style: normal;
+}
+/*VueEditor*/
+.ql-container{
+    min-height: 400px;
+}
+.ql-snow .ql-tooltip{
+    transform: translateX(117.5px) translateY(10px) !important;
+}
+.editor-btn{
+    margin-top: 20px;
+}
+
+/*接口配置*/
+.post_config .el-table__body-wrapper .cell {
+    white-space: normal;
+    word-break: break-all;
+    line-height: 24px;
+    height: 50px;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+
+/* 侧栏二级以及三级样式 */
+.erji .el-submenu__title{
+    padding-left: 40px !important;
+}
+.erji .el-menu-item{
+    padding-left: 60px !important;
+}
+.erji .specialerji{
+    padding-left: 40px !important;
+}
+.sanji .el-submenu__title{
+    padding-left: 60px !important;
+}
+.sanji .el-menu-item{
+    padding-left: 80px !important;
+}
+.sanji .specialsanji{
+    padding-left: 60px !important;
+}
+
+/* 侧栏 */
+.sidebar .el-menu-item-group__title{
+    padding-top: 0;
+}
+.sidebar .el-submenu__icon-arrow{
+    right: 55px;
+}
+
+.erji .el-submenu__title {
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow:hidden;
+    width: 100%;
+    padding-right: 75px;
+}
+
+.sanji .el-submenu__title {
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow:hidden;
+    width: 100%;
+    padding-right: 75px;
+}
+.leftFloatBox{
+    float: left;
+    margin-right: 10px;
+}
+
+@font-face {
+  font-family: 'iconfont';  /* project id 379591 */
+  src: url('//at.alicdn.com/t/font_379591_mv4vyq4q1vrq9f6r.eot');
+  src: url('//at.alicdn.com/t/font_379591_mv4vyq4q1vrq9f6r.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_379591_mv4vyq4q1vrq9f6r.woff') format('woff'),
+  url('//at.alicdn.com/t/font_379591_mv4vyq4q1vrq9f6r.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_379591_mv4vyq4q1vrq9f6r.svg#iconfont') format('svg');
+}
+
+.iconfont{
+    font-family:"iconfont";
+    font-size: 1rem;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    color:#fff;
+}
+#resource_tree>.el-tree-node>.el-tree-node__content>.el-checkbox,
+#box_tree>.el-tree-node>.el-tree-node__content>.el-checkbox,
+#box_tree>.el-tree-node>.el-tree-node__children>.el-tree-node>.el-tree-node__content>.el-checkbox,
+#role_id>.el-tree-node>.el-tree-node__content>.el-checkbox{
+    display: none;
+}
+.casc .el-input {
+    font-size: 14px;
+}
+.casc .el-input--large .el-input__inner{
+    height: 36px;
+}
+
+.upload .el-upload-list .el-upload-list__item .el-upload-list__item-status-label{
+    display: none;
+}
+
+/* 添加企业logo */ 
+#addCompLogo .upload-demo{
+    display: inline-block;
+}
+/*大logo*/
+#addCompLogo .l_logo .el-upload-dragger{
+    border:none;
+    width:180px;
+}
+/*中logo*/
+#addCompLogo .m_logo .el-upload--text,#addCompLogo .m_logo .el-upload--text .avatar{
+    width: 150px;
+    height: 150px;
+}
+#addCompLogo .m_logo .el-upload--text .avatar-uploader-icon{
+    width:148px;
+    height:148px;
+    line-height: 148px;
+    font-size: 24px;
+}
+#addCompLogo .m_logo .el-upload-dragger{
+    border:none;
+    width:150px;
+}
+/*小logo*/
+#addCompLogo .s_logo .el-upload--text,#addCompLogo .s_logo .el-upload--text .avatar{
+    width: 120px;
+    height: 120px;
+}
+#addCompLogo .s_logo .el-upload--text .avatar-uploader-icon{
+    width:118px;
+    height:118px;
+    line-height: 118px;
+    font-size: 20px;
+}
+#addCompLogo .s_logo .el-upload-dragger{
+    border:none;
+    width:120px;
+}
+.special_nav.el-submenu .el-menu-item{
+    min-width: 0;
+}
+
+.presentPara .el-table__row .cell{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* logsShow */
+.logsShow .el-table__row .cell{
+    height: 50px;
+    line-height: 50px;
+    
+
+}
+.logsShow .el-table__row .cell .el-tag{
+    background-color: #fff;
+    font-size: 14px;
+    color: #1f2d3d;
+    height: 20px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;        
+}
+.logsShow .is-leaf {
+    text-align: center;
+}
+.logsShow .el-table__body-wrapper .el-table__row .cell {
+    text-align: center;
+}
+
+/*导航头*/
+.m-nav-menu-subsidiary{
+    margin-bottom:20px;
+}
+.m-nav-menu-subsidiary .navigation{
+    /*background: #324157;*/
+    background: #fff;
+}
+.m-nav-menu-subsidiary .navigation .m-second-class{
+    /*background-color: #f3f3f3 !important;*/
+    /*color:#20a0ff !important;*/
+    background-color: #20a0ff !important;
+    color:#fff !important;
+    font-weight: bold;
+}
+.m-nav-menu-subsidiary .navigation .first_style{
+    /*color: #fff;*/
+}
+.m-nav-menu-subsidiary .navigation .first_style:nth-child(1){
+    border-radius: 5px 0 0 5px;
+}
+.m-nav-menu-subsidiary .navigation .first_style:hover{
+    /*color:#20a0ff;*/
+    color:#fff;
+    background-color:#20a0ff;
+    font-weight: bold;
+}
+/* 消息推送配置-文档链接 */
+.presentPara .el-table_1_column_5 {
+    color: #409eff;
+    cursor: pointer;
+}
+/* 威宁集团功能管理下拉框样式 */
+.select_box .el-input-group__prepend{
+    width: 50%;
+}
+
+/*账户绑定*/
+.g-account-head .el-select .el-input {
+    width: 160px;
+}
